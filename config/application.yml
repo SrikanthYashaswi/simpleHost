@@ -3,5 +3,5 @@ DB_USER: 'shrk'
 DB_PORT: '3306'
 
 development:
-  DB_NAME: 'diaries'
+  DB_NAME: 'wheel'
   DB_PASSWORD:
