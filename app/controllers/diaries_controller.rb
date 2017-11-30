@@ -1,8 +1,5 @@
 class DiariesController < ApplicationController
   def index
-    render json: {"name":"srikanth"}
+    head :ok
   end
-
-
-
 end
