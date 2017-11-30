@@ -7,4 +7,14 @@ describe DiariesController ,:type => :controller do
       response.should be_successful
     end
   end
+
+  context 'create new Diary' do
+    it 'should create new diary' do
+      post :create,
+           name: 'My First Diary'
+      expect(Diary.count).to eq(1)
+      diary = Diary.last
+      expect(diary.name).to eq('My First Diary')
+    end
+  end
 end
